@@ -32,6 +32,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   flex-direction: column-reverse;
 }
 
+section {
+  width: 30vw;
+  height: 10vh;
+}
+
 #three,
 #two,
 #one {
