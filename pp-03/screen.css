@@ -34,7 +34,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 section {
   width: 30vw;
-  height: 10vh;
+  height: 50vw;
 }
 
 #three,
@@ -57,9 +57,11 @@ section {
 @media screen and (min-width: 800px) {
   #content{
     flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
   section {
-    flex: 1 0 initial;
+    width: 33vw;
+    flex: 1 1 auto;
   }
 
 }
