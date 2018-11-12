@@ -19,7 +19,13 @@ body {
 }
 
 /* ===== LAYOUT STYLES ===== */
+.visible {
+  display: block;
+}
 
+.not-visible {
+  display: none;
+}
 
 /* ===== MODULAR STYLES ===== */
 
