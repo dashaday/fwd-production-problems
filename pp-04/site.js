@@ -7,12 +7,18 @@
     // Add a js class on the <html> element...
     document.querySelector('html').className = 'js';
 
+    // Object that appears with no javascript
     var doorbell = document.querySelector('#doorbell');
-    var bellAudio = new Audio('media/doorbell.mp3');
+
+    // object that appears with JavaScript
     var player = document.querySelector('#nojs-doorbell')
 
-    // Show button if JavaScript is working
+    // Doorbell audio
+    var bellAudio = new Audio('media/doorbell.mp3');
+
+    // Hide audio player
     player.classList.replace("visible","not-visible");
+    // Show clickable button
     doorbell.classList.replace("not-visible","visible");
 
     // Listen for click events on the doorbell
