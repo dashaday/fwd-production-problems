@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="css/screen.css" /></head>
 <body>
-  <audio
-    id="nojs-doorbell"
-    class="player visible"
-    controls
-    src="media/doorbell.mp3">
-    Your browser does not support the <code>audio</code> element.
-  </audio>
-  <p id="doorbell" class="button not-visible">Ring the Doorbell</p>
+  <section id="nojs-doorbell" class="player visible">
+    <h1><label for="bell-player">Listen to the Doorbell</label></h1>
+    <audio
+      id="bell-player"
+      controls
+      src="media/doorbell.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+  </section>
+  <p id="doorbell" class="button not-visible" tabindex="1">Ring the Doorbell</p>
   <script src="site.js"></script>
 </body>
 </html>
