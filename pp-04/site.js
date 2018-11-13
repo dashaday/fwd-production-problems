@@ -25,6 +25,18 @@
       bellAudio.play();
     });
 
+    doorbell.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        bellAudio.play();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'd') {
+        bellAudio.play();
+      }
+    });
+
   });
 
 })();
