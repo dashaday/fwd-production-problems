@@ -11,7 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 10%;
 }
 
 .button {
@@ -19,6 +19,7 @@ img {
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.5em gray;
   cursor: pointer;
+  margin-bottom: 5vh;
   padding: 1em 0.5em;
   text-align: center;
   font-family: Arial, Helvetica;
