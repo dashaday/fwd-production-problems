@@ -7,11 +7,10 @@
     // Add a js class on the <html> element...
     document.querySelector('html').className = 'js';
 
-    // Object that appears with no javascript
-    var doorbell = document.querySelector('#doorbell');
-
-    // object that appears with JavaScript
+    // object that appears with no JavaScript
     var player = document.querySelector('#nojs-doorbell')
+    // Object that appears with JavaScript
+    var doorbell = document.querySelector('#doorbell');
 
     // Doorbell audio
     var bellAudio = new Audio('media/doorbell.mp3');
