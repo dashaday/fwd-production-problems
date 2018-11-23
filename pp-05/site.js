@@ -43,3 +43,13 @@ function addTwo(x) {
 
 console.log(addTwo(4)); // 6
 console.log(x); // should be 5 if you corrected the double() function above
+
+// Upon calling the function addTwo(x), we pass a value for x which is 4.
+// What happens is that instead of addTwo(x) using the value of the global
+// variable (5), it uses the value passed onto it (4). This acts as a variable
+// declaration, thereby treating x (4) as a local variable. We should remember
+// that variable declarations found inside a dedicated block will be treated as
+// local variables, otherwise, it will be treated as a global variable
+// (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
+// Statements/var). If we removed the parameters from function addTwo(x), then
+// it would use the global variable x (5) and would change its value to 7.
